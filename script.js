@@ -248,7 +248,7 @@ function Game() {
                 fg_color = "transparent";
                 if (this.map[y][x] >= 1) {
                     //bot
-                    fg_color = "#ff4136";
+                    fg_color = "#00d99f";
                 } else if (this.map[y][x] <= -1) {
                     // player
                     fg_color = "#00d99f";
