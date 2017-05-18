@@ -247,9 +247,11 @@ function Game() {
             for (x = 0; x < 7; x++) {
                 fg_color = "transparent";
                 if (this.map[y][x] >= 1) {
+                    //bot
                     fg_color = "#ff4136";
                 } else if (this.map[y][x] <= -1) {
-                    fg_color = "#0074d9";
+                    // player
+                    fg_color = "#00d99f";
                 }
                 this.drawCircle(75 * x + 100, 75 * y + 50, 25, fg_color, "black");
             }
