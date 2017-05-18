@@ -263,8 +263,10 @@ function Game() {
     this.animate = function (column, move, to_row, cur_pos, callback) {
         var fg_color = "transparent";
         if (move >= 1) {
-            fg_color = "#ff4136";
+            // player
+            fg_color = "#00d99f";
         } else if (move <= -1) {
+            // bot
             fg_color = "#0074d9";
         }
         if (to_row * 75 >= cur_pos) {
