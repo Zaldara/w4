@@ -248,10 +248,10 @@ function Game() {
                 fg_color = "transparent";
                 if (this.map[y][x] >= 1) {
                     //bot
-                    fg_color = "#0074d9";
+                    fg_color = "#ff0019";
                 } else if (this.map[y][x] <= -1) {
                     // player
-                    fg_color = "#00d99f";
+                    fg_color = "#0065ff";
                 }
                 this.drawCircle(75 * x + 100, 75 * y + 50, 25, fg_color, "black");
             }
@@ -264,10 +264,10 @@ function Game() {
         var fg_color = "transparent";
         if (move >= 1) {
             // player
-            fg_color = "#0074d9";
+            fg_color = "#0065ff";
         } else if (move <= -1) {
             // bot
-            fg_color = "#00d99f";
+            fg_color = "#ff0019";
         }
         if (to_row * 75 >= cur_pos) {
             this.clear();
