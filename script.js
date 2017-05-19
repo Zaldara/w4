@@ -264,10 +264,10 @@ function Game() {
         var fg_color = "transparent";
         if (move >= 1) {
             // player
-            fg_color = "#00d99f";
+            fg_color = "#0074d9";
         } else if (move <= -1) {
             // bot
-            fg_color = "#0074d9";
+            fg_color = "#00d99f";
         }
         if (to_row * 75 >= cur_pos) {
             this.clear();
